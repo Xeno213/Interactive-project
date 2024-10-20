@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <input type="text" id="categoryInput" placeholder="New Category">
+            <button class="add-btn" onclick="addCategory()">Add</button>
+            <div class="category-list" id="categoryList"></div>
+        </div>
+        <div class="content">
+            <h3>Advance To-Do List Tasks</h3>
+            <div class="task-form">
+                <input type="text" id="taskNameInput" placeholder="Task Name">
+                <input type="date" id="taskDateInput">
+                <select id="taskCategorySelect">
+                    <option value="" disabled selected>Category</option>
+                </select>
+                <button class="add-btn" onclick="addTask()">Add Task</button>
+            </div>
+            <div class="task-list" id="taskList">
+            </div>
+        </div>
+        <div class="analytics">
+            <h3>Analytics</h3>
+            <canvas id="completionChart"></canvas>
+            <div class="analytics-progress" id="analyticsProgress"></div>
+        </div>
+    </div>
+    <div class="modal" id="editTaskModal">
+        <div class="modal-content">
+            <h3>Edit Task</h3>
+            <input type="text" id="editTaskNameInput" placeholder="Task Name">
+            <input type="date" id="editTaskDateInput">
+            <select id="editTaskCategorySelect">
+                <option value="" disabled selected>Category</option>
+            </select>
+            <div class="modal-buttons">
+                <button class="save-btn" onclick="confirmEditTask()">Save</button>
+                <button class="cancel-btn" onclick="closeEditModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
