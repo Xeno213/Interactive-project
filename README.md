@@ -97,7 +97,6 @@ https://xeno213.github.io/Interactive-project.github.io/
 
 ## Badges
 
-Add badges from somewhere like: [shields.io](https://shields.io/)
 
 [![MIT License](https://img.shields.io/badge/SirjasonPogi-blue?style=for-the-badge
 )](https://choosealicense.com/licenses/mit/)
